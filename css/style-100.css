@@ -1,0 +1,15 @@
+@media (max-width: 768px){
+  .container{
+    max-width:100%;
+  }  
+}
+
+@media (max-width: 992px){
+  .container{
+    max-width:100%;
+  }
+}
+
+.modal-body p {
+	color: black;
+}

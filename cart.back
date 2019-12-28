@@ -1,0 +1,366 @@
+<div class="container" id="checkout-wrap">
+		<div class="row" id="checkout-row">
+
+			<div class="col-6" id="checkout">
+				<a href="#" id="go-back" style="">Go back</a>
+				<h1 id="checkout-title">Choose Your Instrument</h1>
+				
+				<div class="checkout-container-outer" id="checkout-container-outer">
+
+					<div class="checkout-container-inner" id="checkout-container-inner">
+					
+						
+						<div class="checkout-step" id="step-1">
+							<ul>
+								<li data-name='keyboard' data-step='1' onclick="iterateStep(this)">Keyboard</li>
+								<li data-name='mixing' data-step='1' onclick="iterateStep(this)">Mixing Console</li>
+							</ul>
+						</div>
+
+						<div class="checkout-step" id="step-2">
+
+						</div>
+
+						<div class="checkout-step" id="step-3">
+
+						</div>
+
+						<div class="checkout-step" id="step-4">
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-6">
+				<div class="black-bg white-content" id="checkout-menu">
+					<p>Items:</p>
+					<ul>
+
+
+						<li>
+							<div class="row">
+								<div class="col-6-sm">
+									<span>Korg PA4X Front</span>
+								</div>
+								<div class="col-6-sm right">
+									<span>x</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6-sm">
+									<span>+ 1 -</span>
+								</div>
+								<div class="col-6-sm right">
+									<span>$50</span>
+								</div>
+							</div>
+						</li>
+
+						</li>
+
+
+
+						<li class="no-border">
+							<div class="row">
+								<div class="col-6-sm">
+									<span>Total</span>
+								</div>
+								<div class="col-6-sm right">
+									<span>$50</span>
+								</div>
+							</div>
+							<div class="row">
+								<a href="#" id="checkout-btn">Checkout</a>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12" id="footer-text">
+				<a href="#">Can't find your model? Contact us and we'll see what we can do.</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Script goes here -->
+	<script type="text/javascript">
+
+		/* Helper - Get scroll Y */
+		function getScrollY() {
+			let scrOfY = 0;
+			if( typeof( window.pageYOffset ) == 'number' ) {
+				//Netscape compliant
+				scrOfY = window.pageYOffset;
+			} else if( document.body && ( document.body.scrollTop ) ) {
+				//DOM compliant
+				scrOfY = document.body.scrollTop;
+			} else if( document.documentElement && ( document.documentElement.scrollTop ) ) {
+				//IE6 standards compliant mode
+				scrOfY = document.documentElement.scrollTop;
+			}
+				return scrOfY;
+		}
+
+
+		let nav = document.getElementById('nav');
+
+		window.addEventListener('scroll',scrollBg,false);
+		window.addEventListener('wheel',scrollBg,false);
+
+		function scrollBg(e) {
+
+			if (getScrollY() === 0) {
+				nav.style.background = "rgba(0,0,0,0)";
+			} else {
+				nav.style.background = "rgba(0,0,0,1)";
+			}
+		}
+
+		/* Show/hide menu bar */
+		let navLang = document.getElementById('lang-trigger');
+		let langDropdown = document.getElementById('lang-dropdown');
+		let langOverlay = document.getElementById('lang-overlay');
+
+		navLang.addEventListener("click", function() {
+			langDropdown.style.display = "block";
+		});
+
+		langOverlay.addEventListener("click", function() {
+			langDropdown.style.display = "none";
+		});
+
+		/* Scroll functionaliy here */
+
+		let scrollPosition = 0;
+
+		function updateScroll() {
+			let checkoutContainer = document.getElementById("checkout");
+			let checkoutContainerInner = document.getElementById('checkout-container-inner');
+			let checkoutSteps = document.getElementsByClassName('checkout-step');
+
+			for (let i = 0; i < checkoutSteps.length; i++) {
+				checkoutSteps[i].style.width = checkoutContainer.offsetWidth + "px";
+			}
+
+			checkoutContainerInner.style.width = ( (checkoutContainer.offsetWidth * checkoutSteps.length) + 14 ) + "px";
+		}
+
+		updateScroll();
+
+		window.addEventListener('resize', function(event){
+		  updateScroll();
+		});
+
+
+		/* Add lists */
+
+		const stepArray = {
+			'mixing' : {
+				'DYNACORD' : [
+					"1 - POWERMATE 600",
+					"1 - POWERMATE 1000",
+					"1 - POWERMATE 1600",
+					"2 - POWERMATE 1000",
+					"2 - POWERMATE 1600",
+					"3 - POWERMATE 600",
+					"3 - POWERMATE 1000",
+					"3 - POWERMATE 2200",
+					"3 - CMS 600",
+					"3 - CMS 1000",
+					"3 - CMS 1600",
+					"3 - CMS 2200"
+					], 
+				'BEHRINGER' : ["X32 - PRODUCER"], 
+				'ALLEN&HEATH' : ["QU - 16"]
+				},
+
+			'keyboard' : {
+				'KORG' : [
+					"KRONOS 2 - 61" ,
+					"KRONOS 2 - 73",
+					"KRONOS 2 - 88",
+					"KRONOS 2 - PLATINUM",
+					"KRONOS 2 - LS",
+					"KRONOS X - 61",
+					"KRONOS X - 73",
+					"M3",
+					"PA 80",
+					"PA 500",
+					"PA 600",
+					"PA 700",
+					"PA 800",
+					"PA 900",
+					"PA 1000",
+					"PA1X PRO",
+					"PA2 - 73",
+					"PA3X - LE",
+					"PA3X - 61",
+					"PA3X - 73",
+					"PA3X - MG2",
+					"PA4X - 61",
+					"PA4X - 73",
+					"PA4X - MG2",
+					"TRITON - CLASSIC",
+					"TRITON - EXTREME",
+					"TRITON - LE",
+					"TRITON - TR",
+					"TRITON - STUDIO"],
+				'YAMAHA' : [
+					"GENOS",
+					"MONTAGE 6",
+					"MONTAGE 7",
+					"MOTIF XS 6",
+					"MOTIF XS 7",
+					"MOTIF XF 6",
+					"MOTIF XF 7",
+					"TYROS 3",
+					"TYROS 4",
+					"TYROS 5 - 61",
+					"TYROS 5 - 73",
+					"PSR ORI700"], 
+				'ROLAND' : [
+					"FANTOM G6",
+					"FANTOM X6",
+					"E - A7",
+					"MIDI PCR - 800"],
+				'KURZWEIL' : [
+					"PC3K 6",
+					"PC3A 6"]
+				},
+			};
+
+			const models = {
+				'KORG' : [
+					"KRONOS 2 - 61" ,
+					"KRONOS 2 - 73",
+					"KRONOS 2 - 88",
+					"KRONOS 2 - PLATINUM",
+					"KRONOS 2 - LS",
+					"KRONOS X - 61",
+					"KRONOS X - 73",
+					"M3",
+					"PA 80",
+					"PA 500",
+					"PA 600",
+					"PA 700",
+					"PA 800",
+					"PA 900",
+					"PA 1000",
+					"PA1X PRO",
+					"PA2 - 73",
+					"PA3X - LE",
+					"PA3X - 61",
+					"PA3X - 73",
+					"PA3X - MG2",
+					"PA4X - 61",
+					"PA4X - 73",
+					"PA4X - MG2",
+					"TRITON - CLASSIC",
+					"TRITON - EXTREME",
+					"TRITON - LE",
+					"TRITON - TR",
+					"TRITON - STUDIO"],
+				'YAMAHA' : [
+					"GENOS",
+					"MONTAGE 6",
+					"MONTAGE 7",
+					"MOTIF XS 6",
+					"MOTIF XS 7",
+					"MOTIF XF 6",
+					"MOTIF XF 7",
+					"TYROS 3",
+					"TYROS 4",
+					"TYROS 5 - 61",
+					"TYROS 5 - 73",
+					"PSR ORI700"], 
+				'ROLAND' : [
+					"FANTOM G6",
+					"FANTOM X6",
+					"E - A7",
+					"MIDI PCR - 800"],
+				'KURZWEIL' : [
+					"PC3K 6",
+					"PC3A 6"],
+				'DYNACORD' : [
+					"1 - POWERMATE 600",
+					"1 - POWERMATE 1000",
+					"1 - POWERMATE 1600",
+					"2 - POWERMATE 1000",
+					"2 - POWERMATE 1600",
+					"3 - POWERMATE 600",
+					"3 - POWERMATE 1000",
+					"3 - POWERMATE 2200",
+					"3 - CMS 600",
+					"3 - CMS 1000",
+					"3 - CMS 1600",
+					"3 - CMS 2200"
+					], 
+				'BEHRINGER' : ["X32 - PRODUCER"], 
+				'ALLEN&HEATH' : ["QU - 16"]
+			}
+
+		function addUl(step, array) {
+		    // Create the list element:
+		    let list = document.createElement('ul');
+
+		    for (let i = 0; i < array.length; i++) {
+		        // Create the list item:
+		        let item = document.createElement('li');
+
+		        item.setAttribute('data-step', step);
+
+		        item.setAttribute('data-name', array[i]);
+
+		        item.onclick = function() {iterateStep(this)};
+
+		        // Set its contents:
+		        item.appendChild(document.createTextNode(array[i]));
+
+		        // Add it to the list:
+		        list.appendChild(item);
+		    }
+
+
+		    // Finally, return the constructed list:
+			document.getElementById('step-' + step).appendChild(list);
+
+		}
+
+		function moveNext(step) {
+			let checkoutContainer = document.getElementById("checkout");
+			let container = document.getElementById('checkout-container-outer');
+			container.scrollLeft = ( checkoutContainer.offsetWidth + 3.5 ) * step;
+		}
+
+		function iterateStep(obj) {
+			
+			let step = obj.getAttribute('data-step');
+			let name = obj.getAttribute('data-name');
+
+			if (step == '1') {
+
+				console.log("Step 1");
+				addUl(2, Object.keys(stepArray[name]));
+				moveNext(1);
+
+				scrollPosition += 1;
+
+			}
+
+			else if (step == '2') {
+
+				console.log("Step 2");
+				addUl(3, models[name]);
+				moveNext(2);
+
+			}
+		}
+
+	</script>
