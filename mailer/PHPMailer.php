@@ -61,12 +61,11 @@ if (isset($_POST['cart'])) {
     $response .= '</table>';
 }
 
-//var_dump($response);
-//
-//die;
+// Load Composer's autoloader
+require 'vendor/autoload.php';
 
-//PHPMailer Object
-$mail = new PHPMailer;
+// Instantiation and passing `true` enables exceptions
+$mail = new PHPMailer(true);
 
 //Server settings
 $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
