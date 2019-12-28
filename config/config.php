@@ -12,9 +12,11 @@ if ('127.0.0.1' ==$_SERVER['SERVER_ADDR']) {
 
 } else {
 	$servername = "localhost";
-	$username = "root";
+	$username = "prossic";
 	$password = "Prossic123";
 }
+
+var_dump($username);
 
 	try {
 	    $db = new PDO("mysql:host=$servername;dbname=prossic", $username, $password);
