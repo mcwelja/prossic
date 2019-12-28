@@ -1,9 +1,6 @@
 <?php
 
 // ovde idu podaci za pristup bazi
-echo "<pre>";
-var_dump($_SERVER);
-echo "</pre>";
 
 if ('127.0.0.1' ==$_SERVER['SERVER_ADDR']) {
 	$servername = "localhost";
@@ -15,8 +12,6 @@ if ('127.0.0.1' ==$_SERVER['SERVER_ADDR']) {
 	$username = "prossic";
 	$password = "Prossic123";
 }
-
-var_dump($username);
 
 	try {
 	    $db = new PDO("mysql:host=$servername;dbname=prossic", $username, $password);
