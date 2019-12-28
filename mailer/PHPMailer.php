@@ -6,13 +6,6 @@ use PHPMailer\PHPMailer\SMTP;
 include '../config/config.php';
 require_once "../vendor/autoload.php";
 
-//echo '<pre>';
-//var_dump($_SESSION);
-//var_dump($_POST);
-//echo '</pre>';
-//
-//var_dump(isset($_POST['cart']));
-
 $response = '';
 if (isset($_POST['cart'])) {
     $response .= '<table class="table table-striped">';
@@ -62,7 +55,7 @@ if (isset($_POST['cart'])) {
 }
 
 // Load Composer's autoloader
-require '../vendor/autoload.php';
+// require '../vendor/autoload.php';
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
@@ -74,7 +67,8 @@ $mail->Host = 'smtp.gmail.com';                             // Set the SMTP serv
 $mail->SMTPAuth = true;                                     // Enable SMTP authentication
 $mail->Username = 'mcwelja@gmail.com';                      // SMTP username
 $mail->Password = 'MladenVeljkovic1990';                    // SMTP password
-$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
+// $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
+$mail->SMTPSecure = "tls";
 $mail->Port = 587;                                          // TCP port to connect to
 
 //From email address and name
