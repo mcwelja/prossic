@@ -1,6 +1,9 @@
 <?php
 
 // ovde idu podaci za pristup bazi
+echo "<pre>";
+var_dump($_SERVER);
+echo "</pre>";
 
 if ('127.0.0.1' ==$_SERVER['SERVER_ADDR']) {
 	$servername = "localhost";
