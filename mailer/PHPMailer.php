@@ -48,10 +48,14 @@ if (isset($_POST['cart'])) {
     $response .= '</table>';
     $response .= '<tfoot>';
     $response .= '<tr>';
-    $response .= '<td colspan="2" class="hidden-xs text-center"><strong id="total-price">Total ' . $_SESSION['total'] . '&euro;</strong></td>';
+    $response .= '<td colspan="4" class="hidden-xs text-center"><strong id="total-price">Total ' . $_SESSION['total'] . '&euro;</strong></td>';
     $response .= '</tr>';
     $response .= '</tfoot>';
     $response .= '</table>';
+
+    $response .= '<br>' . 'Name: ' . $_POST['first-name'] . ' ' . $_POST['last-name'] . '<br>';
+    $response .= 'Phone number: ' . $_POST['phone-number'] . '<br>';
+    $response .= 'Email: ' . $_POST['email'];
 }
 
 // Load Composer's autoloader
