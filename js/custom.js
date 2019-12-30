@@ -110,11 +110,39 @@ $(document).ready(function () {
             result += '</div>';
         }
         result += '<div class="row back">';
-        result += '<div id="" class="col-sm text-center"> Back </div>';
+        result += '<div id="back-to-instrument-type" class="col-sm text-center"> Back </div>';
         result += '</div>';
 
         return result;
     }
+
+    $('.order-content').on('click', '#back-to-instrument-type', function () {
+        console.log('radi');
+        $('#order-title').html('Chose Your Instrument Type');
+
+        $('.order-content').html(
+            '<div class="row">' +
+                        '<div class="col m-0 p-0 type-opacity">' +
+                            '<img id="order-keyboard" src="img/klavir1.png">' +
+                            '<div class="centered centDiv">' +
+                                '<h2> Keyboard </h2>' +
+                            '</div>' +
+                        '</div>' +
+                        '<div class="col m-0 p-0 type-opacity">' +
+                        '<img id="order-mixing" src="img/klavir1.png">' +
+                        '   <div class="centered centDiv">' +
+                                '<h2> Mixing Console </h2>' +
+                            '</div>' +
+                    '</div>' +
+                    '<div class="col m-0 p-0 type-opacity">' +
+                        '<img id="order-guitar" src="img/klavir1.png">' +
+                            '<div class="centered centDiv">' +
+                            '<h2> Guitar Processors </h2>' +
+                        '</div>' +
+                    '</div>' +
+                    '</div>'
+        );
+    });
 
     $('.order-content').on('click', '.type-opacity', function () {
         var typeText = $(this).find('img').attr('id');
