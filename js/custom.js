@@ -167,6 +167,10 @@ $(document).ready(function () {
         if (typeText == 'order-mixing') {
             $('#order-title').html('Chose Your Mixing Console Brand');
         }
+
+        if (typeText == 'order-guitar') {
+            $('#order-title').html('Chose Your Guitar Processors');
+        }
     });
 
     function getModelsByBrand(models) {
