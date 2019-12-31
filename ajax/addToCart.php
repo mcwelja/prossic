@@ -63,7 +63,7 @@ if (isset($_SESSION['products'])) {
 }
 
 $total = 0;
-foreach ($products as $key => $product) {
+foreach ($_SESSION['products'] as $key => $product) {
     $total +=  rtrim($product['price'], '€');
 }
 
