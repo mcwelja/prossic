@@ -98,7 +98,7 @@ include 'config/config.php';
             if (isset($_SESSION['products'])) {
 				echo '<tr>';
 					echo '<td colspan="2">';
-                        echo '<a href="index.php" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a>';
+                        echo '<a href="index.php#order" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a>';
                     echo '</td>';
 					echo '<td colspan="4" class="hidden-xs"></td>';
 					echo '<td colspan="2" class="hidden-xs text-center"><strong id="total-price">Total ' . $_SESSION['total'] . '€</strong></td>';
