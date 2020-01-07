@@ -438,7 +438,7 @@ $(document).ready(function () {
     });
     //FINAL STEP BEFORE ADD TO CART - ADD PRICES TO HIDDEN VALUES
 
-
+    // ADDING PRICES
     $('.order-content').on('click', '.model-opacity', function () {
         var modelText = $.trim($(this).text());
         console.log('test:' + modelText);
@@ -452,178 +452,158 @@ $(document).ready(function () {
                 getHtmlForWhatDoYouNeedToProtect({
                     'mainPrice': 65,
                     'sidePrice1': 30,
-                    'sidePrice2': 30,
                     'sidePattern': ['carbon fiber'],
                     'sideColor': ['black'],
-                    'displayPrice': 10,
+                    'displayPrice': 15,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
+        // Korg
         if (modelText == 'Pa4x, Mg2, Oriental / 61 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
                     'mainPrice': 65,
                     'sidePrice1': 30,
-                    'sidePrice2': 30,
                     'sidePattern': ['carbon fiber'],
                     'sideColor': ['black'],
-                    'displayPrice': 10,
+                    'displayPrice': 15,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Pa4x, Mg1, Musicant / 76 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
+                    'mainPrice': 75,
                     'sidePrice1': 30,
-                    'sidePrice2': 30,
                     'sidePattern': ['carbon fiber'],
                     'sideColor': ['black'],
-                    'displayPrice': 10,
-                    'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
+                    'displayPrice': 15,
+                    'keysHalfPrice1': 25,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
-                    'keysWholePrice2': 30,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 55,
+                    'keysWholePrice2': 35,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white']
                 })
             );
         }
         if (modelText == 'Pa4x, Mg2, Oriental / 76 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
+                    'mainPrice': 75,
                     'sidePrice1': 30,
-                    'sidePrice2': 30,
                     'sidePattern': ['carbon fiber'],
                     'sideColor': ['black'],
-                    'displayPrice': 10,
-                    'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
+                    'displayPrice': 15,
+                    'keysHalfPrice1': 25,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
-                    'keysWholePrice2': 30,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 55,
+                    'keysWholePrice2': 35,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white']
                 })
             );
         }
         if (modelText == 'Pa3x, Mg1, Musicant / 61 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
+                    'mainPrice': 60,
+                    'sidePrice1': 25,
                     'sidePattern': ['carbon fiber'],
                     'sideColor': ['black'],
                     'displayPrice': 10,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Pa3x, Mg2, Oriental / 61 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
+                    'mainPrice': 60,
+                    'sidePrice1': 25,
                     'sidePattern': ['carbon fiber'],
                     'sideColor': ['black'],
                     'displayPrice': 10,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Pa3x, Mg1, Musicant / 76 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
+                    'mainPrice': 70,
+                    'sidePrice1': 25,
                     'sidePattern': ['carbon fiber'],
                     'sideColor': ['black'],
                     'displayPrice': 10,
-                    'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
+                    'keysHalfPrice1': 25,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
-                    'keysWholePrice2': 30,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 55,
+                    'keysWholePrice2': 35,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
-        if (modelText == 'Pa3x, Mg2, Oriental / 76 keys\n') {
+        if (modelText == 'Pa3x, Mg2, Oriental / 76 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
+                    'mainPrice': 70,
+                    'sidePrice1': 25,
                     'sidePattern': ['carbon fiber'],
                     'sideColor': ['black'],
                     'displayPrice': 10,
-                    'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
+                    'keysHalfPrice1': 25,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
-                    'keysWholePrice2': 30,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 55,
+                    'keysWholePrice2': 35,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Pa3x LE / 76 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
+                    'mainPrice': 70,
                     'displayPrice': 10,
-                    'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
+                    'keysHalfPrice1': 25,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
-                    'keysWholePrice2': 30,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 55,
+                    'keysWholePrice2': 35,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
@@ -631,19 +611,14 @@ $(document).ready(function () {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
                     'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
                     'displayPrice': 10,
-                    'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
+                    'keysHalfPrice1': 25,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
-                    'keysWholePrice2': 30,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 55,
+                    'keysWholePrice2': 35,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
@@ -651,39 +626,29 @@ $(document).ready(function () {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
                     'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
                     'displayPrice': 10,
-                    'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
+                    'keysHalfPrice1': 25,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
-                    'keysWholePrice2': 30,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 55,
+                    'keysWholePrice2': 35,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Pa1x / 61 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
+                    'mainPrice': 55,
                     'displayPrice': 10,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
@@ -691,99 +656,74 @@ $(document).ready(function () {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
                     'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
-                    'displayPrice': 10,
+                    'displayPrice': 15,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Kronos 2, SE / 73 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
-                    'displayPrice': 10,
-                    'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
+                    'mainPrice': 75,
+                    'displayPrice': 15,
+                    'keysHalfPrice1': 25,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
-                    'keysWholePrice2': 30,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 55,
+                    'keysWholePrice2': 35,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Kronos 2, SE, Platinum / 88 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
-                    'displayPrice': 10,
-                    'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
+                    'mainPrice': 85,
+                    'displayPrice': 15,
+                    'keysHalfPrice1': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
-                    'keysWholePrice2': 30,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 60,
+                    'keysWholePrice2': 40,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Kronos LS / 88 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
-                    'displayPrice': 10,
-                    'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
+                    'mainPrice': 85,
+                    'displayPrice': 15,
+                    'keysHalfPrice1': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
-                    'keysWholePrice2': 30,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 60,
+                    'keysWholePrice2': 40,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Kronos X, 1 / 61 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
-                    'displayPrice': 10,
+                    'mainPrice': 60,
+                    'displayPrice': 15,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
@@ -791,266 +731,739 @@ $(document).ready(function () {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
                     'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
-                    'displayPrice': 10,
-                    'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
+                    'displayPrice': 15,
+                    'keysHalfPrice1': 25,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
-                    'keysWholePrice2': 30,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 55,
+                    'keysWholePrice2': 35,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Pa 1000 / 61 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
-                    'displayPrice': 10,
+                    'mainPrice': 55,
+                    'displayPrice': 15,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Pa 900 / 61 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
+                    'mainPrice': 50,
                     'displayPrice': 10,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Pa 800 / 61 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
+                    'mainPrice': 50,
                     'displayPrice': 10,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Pa 700 / 61 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
-                    'displayPrice': 10,
+                    'mainPrice': 55,
+                    'displayPrice': 15,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Pa 600 / 61 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
+                    'mainPrice': 50,
                     'displayPrice': 10,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Pa 500 / 61 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
+                    'mainPrice': 45,
                     'displayPrice': 10,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Pa 80 / 61 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
+                    'mainPrice': 40,
                     'displayPrice': 10,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Pa 60 / 61 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
+                    'mainPrice': 40,
                     'displayPrice': 10,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Triton LE, TR / 61 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
-                    'displayPrice': 10,
+                    'mainPrice': 35,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Triton CLASSIC / 61 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
+                    'mainPrice': 40,
                     'displayPrice': 10,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Triton EXTREME / 61 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
+                    'mainPrice': 40,
                     'displayPrice': 10,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
         if (modelText == 'Triton STUDIO / 61 keys') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 65,
-                    'sidePrice1': 30,
-                    'sidePrice2': 30,
-                    'sidePattern': ['carbon fiber'],
-                    'sideColor': ['black'],
+                    'mainPrice': 40,
                     'displayPrice': 10,
                     'keysHalfPrice1': 20,
-                    'keysHalfPrice2': 30,
                     'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'red'],
-                    'keysWholePrice1': 20,
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
                     'keysWholePrice2': 30,
                     'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['grey', 'red', 'silver', 'red'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
                 })
             );
         }
+        // Yamaha
+        if (modelText == 'Genos / 76 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 90,
+                    'displayPrice': 20,
+                    'keysHalfPrice1': 25,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 55,
+                    'keysWholePrice2': 35,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'Montage 6 / 61 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 65,
+                    'displayPrice': 15,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'Montage 7 / 76 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 75,
+                    'displayPrice': 15,
+                    'keysHalfPrice1': 25,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 55,
+                    'keysWholePrice2': 35,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'Tyros 5 / 76 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 85,
+                    'displayPrice': 20,
+                    'keysHalfPrice1': 25,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 55,
+                    'keysWholePrice2': 35,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'Tyros 5 / 61 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 80,
+                    'displayPrice': 20,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'Tyros 4 / 61 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 75,
+                    'displayPrice': 20,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'Tyros 3 / 61 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 75,
+                    'displayPrice': 20,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'XS, XF 6 / 61 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 60,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'XS, XF 7 / 76 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 65,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 25,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 55,
+                    'keysWholePrice2': 35,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'PSR-OR 700 / 61 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'PSR-S 700 / 61 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        // Roland
+        if (modelText == 'FA 06 / 61 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 60,                    
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'JUNO-DS / 61 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'EA 7 / 61 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 55,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'Fantom X6 / 61 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 55,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'Fantom G6 / 61 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 65,
+                    'displayPrice': 15,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'Edirol PCR 800 / 61 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        // Kurzweil
+        if (modelText == 'Pc3a6 / 61 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 55,
+                    'displayPrice': 7,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'Pc3k6 / 61 keys') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 55,
+                    'displayPrice': 7,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        // Dynacord
+        if (modelText == 'CMS, PM 3 / 1000') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'CMS, PM 3 / 2200') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'PM 2 / 600') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'PM 2 / 1600') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'PM 1 / 1000') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'PM 1 / 1600') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        // Behringer
+        if (modelText == 'X32 ') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        // Allan&heat
+        if (modelText == 'Q 16') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'Pa12 CP') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        // Presonus
+        if (modelText == 'Studiolive 16.0.2.') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'Studiolive 16.4.2.') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'Studiolive 24.4.2.') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        // Studiomaster
+        if (modelText == 'Digilive 16') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        // Midas
+        if (modelText == 'M32R') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        if (modelText == 'GT 1000') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 40,
+                    'displayPrice': 10,
+                    'keysHalfPrice1': 20,
+                    'keysHalfPattern': ['classic matt'],
+                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+                    'keysWholePrice1': 50,
+                    'keysWholePrice2': 30,
+                    'keysWholePattern': ['classic matt', 'carbon fiber'],
+                    'keysWholeColor': ['black', 'white', 'black/white'],
+                })
+            );
+        }
+        // if (modelText == '') {
+        //     $('.order-content').html(
+        //         getHtmlForWhatDoYouNeedToProtect({
+        //             'mainPrice': 40,
+        //             'displayPrice': 10,
+        //             'keysHalfPrice1': 20,
+        //             'keysHalfPattern': ['classic matt'],
+        //             'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
+        //             'keysWholePrice1': 50,
+        //             'keysWholePrice2': 30,
+        //             'keysWholePattern': ['classic matt', 'carbon fiber'],
+        //             'keysWholeColor': ['black', 'white', 'black/white'],
+        //         })
+        //     );
+        // }
     });
 
     function getHtmlForWhatDoYouNeedToProtect(data) {
         var result = '';
+
+        // if second price for side dosn't exist
+        var sidePrice2 = (typeof data.sidePrice2 === 'undefined') ? '' : '/' + data.sidePrice2;
+
+        // if second price for side dosn't exist
+        var keysHalfPrice2 = (typeof data.keysHalfPrice2 === 'undefined') ? '' : '/' + data.keysHalfPrice2;
+
+        // if second price for side dosn't exist
+        var keysWholePrice2 = (typeof data.keysWholePrice2 === 'undefined') ? '' : '/' + data.keysWholePrice2;
 
         // MAIN - proslediti cenu
         result += '<div class="row">';
@@ -1066,99 +1479,107 @@ $(document).ready(function () {
         result += '</div>';
 
         // SIDE - proslediti patterns i colors i cenu
-        result += '<div class="row">';
-        result += '<div class="col">';
-        result += '<div class="form-check mb-2">';
-        result += '<input class="form-check-input" type="checkbox" value="Side" id="sideCheck">';
-        result += '<label class="form-check-label" for="sideCheck">Side</label>';
-        result += '</div>';
-        result += '</div>';
-        result += '<div class="col">';
-        result += '<select class="browser-default" name="type" id="side_dropdown" style="opacity: 0.7;" disabled>';
-        result += '<option value="" disabled selected>- Select pattern -</option>';
-        result += '<option value="fiber">carbon fiber</option>';
-        result += '</select>';
-        result += '</div>';
-        result += '<div class="col">';
-        result += '<select class="browser-default ml-5" name="type" id="side_dropdown_2" style="opacity: 0.7;" disabled>';
-        result += '<option value="" disabled selected>- Select color -</option>';
-        result += '<option value="fiber">black</option>';
-        result += '</select>';
-        result += '</div>';
-        result += '<div class="col"><span id="sidePrice" style="opacity: 0.7;">' + data.sidePrice1 + '/' + data.sidePrice2 + '&euro;</span></div>';
-        result += '<input type="hidden" id="sidePriceHidden" value="' + data.sidePrice1 + '/' + data.sidePrice2 + '&euro;' + '">';
-        result += '</div>';
+        if (data.sidePrice1) {
+            result += '<div class="row">';
+            result += '<div class="col">';
+            result += '<div class="form-check mb-2">';
+            result += '<input class="form-check-input" type="checkbox" value="Side" id="sideCheck">';
+            result += '<label class="form-check-label" for="sideCheck">Side</label>';
+            result += '</div>';
+            result += '</div>';
+            result += '<div class="col">';
+            result += '<select class="browser-default" name="type" id="side_dropdown" style="opacity: 0.7;" disabled>';
+            result += '<option value="" disabled selected>- Select pattern -</option>';
+            result += '<option value="fiber">carbon fiber</option>';
+            result += '</select>';
+            result += '</div>';
+            result += '<div class="col">';
+            result += '<select class="browser-default ml-5" name="type" id="side_dropdown_2" style="opacity: 0.7;" disabled>';
+            result += '<option value="" disabled selected>- Select color -</option>';
+            result += '<option value="fiber">black</option>';
+            result += '</select>';
+            result += '</div>';
+            result += '<div class="col"><span id="sidePrice" style="opacity: 0.7;">' + data.sidePrice1 + sidePrice2 + '&euro;</span></div>';
+            result += '<input type="hidden" id="sidePriceHidden" value="' + data.sidePrice1 + '/' + data.sidePrice2 + '&euro;' + '">';
+            result += '</div>';
+        }
 
         // DISPLAY - proslediti cenu
-        result += '<div class="row">';
-        result += '<div class="col">';
-        result += '<div class="form-check mb-2">';
-        result += '<input class="form-check-input" type="checkbox" value="Display" id="displayCheck">';
-        result += '<label class="form-check-label" for="displayCheck">Display</label>';
-        result += '</div>';
-        result += '</div>';
-        result += '<div class="col"></div>';
-        result += '<div class="col"></div>';
-        result += '<div class="col"><span id="displayPrice" style="opacity: 0.7;">' + data.displayPrice + '&euro;</span></div>';
-        result += '</div>';
+        if (data.displayPrice) {
+            result += '<div class="row">';
+            result += '<div class="col">';
+            result += '<div class="form-check mb-2">';
+            result += '<input class="form-check-input" type="checkbox" value="Display" id="displayCheck">';
+            result += '<label class="form-check-label" for="displayCheck">Display</label>';
+            result += '</div>';
+            result += '</div>';
+            result += '<div class="col"></div>';
+            result += '<div class="col"></div>';
+            result += '<div class="col"><span id="displayPrice" style="opacity: 0.7;">' + data.displayPrice + '&euro;</span></div>';
+            result += '</div>';
+        }
 
         // KEYS HALF proslediti patterns i colors i cene
-        result += '<div class="row">';
-        result += '<div class="col">';
-        result += '<div class="form-check mb-2">';
-        result += '<input class="form-check-input" type="checkbox" value="KeysHalf" id="keysHalfCheck">';
-        result += '<label class="form-check-label" for="keysHalfCheck">Keys-half</label>';
-        result += '</div>';
-        result += '</div>';
-        result += '<div class="col">';
-        result += '<select class="browser-default" name="type" id="keys_half_dropdown" style="opacity: 0.7;" disabled>';
-        result += '<option value="" disabled selected>- Select pattern -</option>';
-        result += '<option value="matt">classic matt</option>';
-        result += '</select>';
-        result += '</div>';
-        result += '<div class="col">';
-        result += '<select class="browser-default ml-5" name="type" id="keys_half_dropdown_2" style="opacity: 0.7;" disabled>';
-        result += '<option value="" disabled selected>- Select color -</option>';
-        result += '<option value="grey">grey</option>';
-        result += '<option value="red">red</option>';
-        result += '<option value="silver">silver</option>';
-        result += '<option value="gold">gold</option>';
-        result += '</select>';
-        result += '</div>';
-        result += '<div class="col"><span id="keysHalfPrice" style="opacity: 0.7;">' + data.keysHalfPrice1 + '/' + data.keysHalfPrice2 + '&euro;</span></div>';
-        result += '<input type="hidden" id="keysHalfPriceHidden" value="' + data.keysHalfPrice1 + '/' + data.keysHalfPrice2 + '&euro;' + '">';
-        result += '</div>';
+        if (data.keysHalfPrice1) {
+            result += '<div class="row">';
+            result += '<div class="col">';
+            result += '<div class="form-check mb-2">';
+            result += '<input class="form-check-input" type="checkbox" value="KeysHalf" id="keysHalfCheck">';
+            result += '<label class="form-check-label" for="keysHalfCheck">Keys-half</label>';
+            result += '</div>';
+            result += '</div>';
+            result += '<div class="col">';
+            result += '<select class="browser-default" name="type" id="keys_half_dropdown" style="opacity: 0.7;" disabled>';
+            result += '<option value="" disabled selected>- Select pattern -</option>';
+            result += '<option value="matt">classic matt</option>';
+            result += '</select>';
+            result += '</div>';
+            result += '<div class="col">';
+            result += '<select class="browser-default ml-5" name="type" id="keys_half_dropdown_2" style="opacity: 0.7;" disabled>';
+            result += '<option value="" disabled selected>- Select color -</option>';
+            result += '<option value="grey">grey</option>';
+            result += '<option value="red">red</option>';
+            result += '<option value="silver">silver</option>';
+            result += '<option value="gold">gold</option>';
+            result += '</select>';
+            result += '</div>';
+            result += '<div class="col"><span id="keysHalfPrice" style="opacity: 0.7;">' + data.keysHalfPrice1 + keysHalfPrice2 + '&euro;</span></div>';
+            result += '<input type="hidden" id="keysHalfPriceHidden" value="' + data.keysHalfPrice1 + '/' + data.keysHalfPrice2 + '&euro;' + '">';
+            result += '</div>';
+        }
 
         // KEYS WHOLE proslediti patterns i colors i cene
-        result += '<div class="row">';
-        result += '<div class="col">';
-        result += '<div class="form-check mb-2">';
-        result += '<input class="form-check-input" type="checkbox" value="KeysWhole" id="keysWholeCheck">';
-        result += '<label class="form-check-label" for="keysWholeCheck">Keys-whole</label>';
-        result += '</div>';
-        result += '</div>';
-        result += '<div class="col">';
-        result += '<select class="browser-default" name="type" id="keys_whole_dropdown" style="opacity: 0.7;" disabled>';
-        result += '<option value="" disabled selected>- Select pattern -</option>';
-        result += '<option value="matt">classic matt</option>';
-        result += '<option value="fiber">carbon fiber</option>';
-        result += '</select>';
-        result += '</div>';
-        result += '<div class="col">';
-        result += '<select class="browser-default ml-5" name="type" id="keys_whole_dropdown_2" style="opacity: 0.7;" disabled>';
-        result += '<option value="" disabled selected>- Select color -</option>';
-        result += '<option value="grey">grey</option>';
-        result += '<option value="red">red</option>';
-        result += '<option value="silver">silver</option>';
-        result += '<option value="gold">gold</option>';
-        result += '</select>';
-        result += '</div>';
-        result += '<div class="col"><span id="keysWholePrice" style="opacity: 0.7;">' + data.keysWholePrice1 + '/' + data.keysWholePrice2 + '&euro;</span></div>';
-        result += '<input type="hidden" id="keysWholePriceHidden" value="' + data.keysWholePrice1 + '/' + data.keysWholePrice2 + '&euro;' + '">';
-        result += '</div>';
-        result += '<div class="row back">';
-        result += '<div id="back-to-keyboard-model" class="col-sm text-center"> Back </div>';
-        result += '</div>';
+        if (data.keysWholePrice1) {
+            result += '<div class="row">';
+            result += '<div class="col">';
+            result += '<div class="form-check mb-2">';
+            result += '<input class="form-check-input" type="checkbox" value="KeysWhole" id="keysWholeCheck">';
+            result += '<label class="form-check-label" for="keysWholeCheck">Keys-whole</label>';
+            result += '</div>';
+            result += '</div>';
+            result += '<div class="col">';
+            result += '<select class="browser-default" name="type" id="keys_whole_dropdown" style="opacity: 0.7;" disabled>';
+            result += '<option value="" disabled selected>- Select pattern -</option>';
+            result += '<option value="matt">classic matt</option>';
+            result += '<option value="fiber">carbon fiber</option>';
+            result += '</select>';
+            result += '</div>';
+            result += '<div class="col">';
+            result += '<select class="browser-default ml-5" name="type" id="keys_whole_dropdown_2" style="opacity: 0.7;" disabled>';
+            result += '<option value="" disabled selected>- Select color -</option>';
+            result += '<option value="grey">grey</option>';
+            result += '<option value="red">red</option>';
+            result += '<option value="silver">silver</option>';
+            result += '<option value="gold">gold</option>';
+            result += '</select>';
+            result += '</div>';
+            result += '<div class="col"><span id="keysWholePrice" style="opacity: 0.7;">' + data.keysWholePrice1 + keysWholePrice2 + '&euro;</span></div>';
+            result += '<input type="hidden" id="keysWholePriceHidden" value="' + data.keysWholePrice1 + '/' + data.keysWholePrice2 + '&euro;' + '">';
+            result += '</div>';
+            result += '<div class="row back">';
+            result += '<div id="back-to-keyboard-model" class="col-sm text-center"> Back </div>';
+            result += '</div>';
+        }
 
         // BUTTON
         result += '<div class="row">';
@@ -1270,9 +1691,9 @@ $(document).ready(function () {
         $('#keys_half_dropdown_2').css('opacity', '1');
         $('#keys_half_dropdown_2').removeAttr("disabled");
 
-        if ($(this).val() == 'fiber') {
+        if ($(this).val() == 'matt') {
             $('#keysHalfPrice').html(price1 + '&euro;');
-        } else if ($(this).val() == 'matt') {
+        } else if ($(this).val() == 'fiber') {
             $('#keysHalfPrice').html(price2 + '&euro;');
         }
 
