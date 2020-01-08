@@ -166,14 +166,27 @@ $(document).ready(function () {
 
         if (typeText == 'order-mixing') {
             $('#order-title').html('Chose Your Mixing Console Brand');
+
+            $('.order-content').html(
+                getBrandsByInstrumentType([
+                    ['Dynacord', '', '']
+                ])
+            );
         }
 
         if (typeText == 'order-guitar') {
             $('#order-title').html('Chose Your Guitar Processors');
+
+            $('.order-content').html(
+                getBrandsByInstrumentType([
+                    ['Boss', '', '']
+                ])
+            );
         }
     });
 
     function getModelsByBrand(models) {
+        var typeText =  $('input[name="type_order_hidden"]').val();
         var result = '';
 
         for (var i = 0; i < models.length; i++) {
@@ -184,7 +197,14 @@ $(document).ready(function () {
             result += '</div>';
         }
         result += '<div class="row back">';
-        result += '<div id="back-to-keyboard-brand" class="col-sm text-center"> Back </div>';
+
+        if (typeText == 'order-guitar') {
+            result += '<div id="back-to-guitar-brand" class="col-sm text-center"> Back </div>';
+        } else if (typeText == 'order-mixing') {
+            result += '<div id="back-to-mixing-brand" class="col-sm text-center"> Back </div>';
+        } else if (typeText == 'order-keyboard') {
+            result += '<div id="back-to-keyboard-brand" class="col-sm text-center"> Back </div>';
+        }
         result += '</div>';
 
         return result;
@@ -194,7 +214,10 @@ $(document).ready(function () {
     //Prints content based on mark selected
     $('.order-content').on('click', '.mark-opacity', function () {
         var markText = $.trim($(this).text());
-        console.log(markText);
+        var typeText =  $('input[name="type_order_hidden"]').val();
+
+        console.log('203: ' + markText);
+        console.log('204: ' + typeText)
 
         $('input[name="mark_order_hidden"]').val(markText);
 
@@ -293,6 +316,25 @@ $(document).ready(function () {
                 ])
             );
         }
+
+        // If mixing type
+        if (markText == 'Dynacord' && typeText == 'order-mixing') {
+            $('.order-content').html(
+                getModelsByBrand([
+                    ['CMS, PM 3 / 600', 'CMS, PM 3', 'PM 2 / 1000'],
+                    ['PM 1 / 600', '', '']
+                ])
+            );
+        }
+
+        // If guitar type
+        if (markText == 'Boss' && typeText == 'order-guitar') {
+            $('.order-content').html(
+                getModelsByBrand([
+                    ['GT 1000', '', '']
+                ])
+            );
+        }
     });
 
     //Back buton - prints content for keyboard brads
@@ -309,11 +351,34 @@ $(document).ready(function () {
         );
     });
 
+    $('.order-content').on('click', '#back-to-guitar-brand', function () {
+        $('#order-title').html('Chose Your Guitar Brand');
+
+        $('.order-content').html(
+            getBrandsByInstrumentType([
+                ['Boss', '', '']
+            ])
+        );
+    });
+
+    $('.order-content').on('click', '#back-to-mixing-brand', function () {
+        $('#order-title').html('Chose Your Mixing Brand');
+
+        $('.order-content').html(
+            getBrandsByInstrumentType([
+                ['Dynacord', '', '']
+            ])
+        );
+    });
+
     //Back buton - prints content for keyboard models
     $('.order-content').on('click', '#back-to-keyboard-model', function () {
         $('#order-title').html('Chose Your Model');
 
+        var typeText =  $('input[name="type_order_hidden"]').val();
         var markText = $('input[name="mark_order_hidden"]').val();
+        console.log(typeText);
+        console.log(markText);
 
         if (markText == 'Korg') {
             $('.order-content').html(
@@ -405,6 +470,23 @@ $(document).ready(function () {
             $('.order-content').html(
                 getModelsByBrand([
                     ['M32R', '', '']
+                ])
+            );
+        }
+
+        if (markText == 'Boss' && typeText == 'order-guitar') {
+            $('.order-content').html(
+                getModelsByBrand([
+                    ['GT 1000', '', '']
+                ])
+            );
+        }
+        
+        if (markText == 'Dynacord' && typeText == 'order-mixing') {
+            $('.order-content').html(
+                getModelsByBrand([
+                    ['CMS, PM 3 / 600', 'CMS, PM 3', 'PM 2 / 1000'],
+                    ['PM 1 / 600', '', '']
                 ])
             );
         }
@@ -1421,18 +1503,43 @@ $(document).ready(function () {
                 })
             );
         }
+        // BOSS - Guitar
         if (modelText == 'GT 1000') {
             $('.order-content').html(
                 getHtmlForWhatDoYouNeedToProtect({
-                    'mainPrice': 40,
-                    'displayPrice': 10,
-                    'keysHalfPrice1': 20,
-                    'keysHalfPattern': ['classic matt'],
-                    'keysHalfColor': ['grey', 'red', 'silver', 'gold'],
-                    'keysWholePrice1': 50,
-                    'keysWholePrice2': 30,
-                    'keysWholePattern': ['classic matt', 'carbon fiber'],
-                    'keysWholeColor': ['black', 'white', 'black/white'],
+                    'mainPrice': 60,
+                })
+            );
+        }
+        // Dynacord - Mixing
+        if (modelText == 'CMS, PM 3 / 600') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 60
+                })
+            );
+        }
+
+        if (modelText == 'CMS, PM 3') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 75
+                })
+            );
+        }
+
+        if (modelText == 'PM 2 / 1000') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 65
+                })
+            );
+        }
+
+        if (modelText == 'PM 1 / 600') {
+            $('.order-content').html(
+                getHtmlForWhatDoYouNeedToProtect({
+                    'mainPrice': 45,
                 })
             );
         }
@@ -1576,12 +1683,14 @@ $(document).ready(function () {
             result += '<div class="col"><span id="keysWholePrice" style="opacity: 0.7;">' + data.keysWholePrice1 + keysWholePrice2 + '&euro;</span></div>';
             result += '<input type="hidden" id="keysWholePriceHidden" value="' + data.keysWholePrice1 + '/' + data.keysWholePrice2 + '&euro;' + '">';
             result += '</div>';
-            result += '<div class="row back">';
-            result += '<div id="back-to-keyboard-model" class="col-sm text-center"> Back </div>';
-            result += '</div>';
         }
 
-        // BUTTON
+        // BACK
+        result += '<div class="row back">';
+        result += '<div id="back-to-keyboard-model" class="col-sm text-center"> Back </div>';
+        result += '</div>';
+
+        // BUTTON ADD TO CART
         result += '<div class="row">';
         result += '<button type="submit" class="btn btn-dark m-auto">Add to cart</button>';
         result += '</div>';
