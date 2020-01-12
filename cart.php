@@ -58,9 +58,7 @@ include 'config/config.php';
 				</thead>
 				<tbody>
                 <?php
-//                echo '<pre>';
-//                var_dump($_SESSION);
-//                echo '</pre>';
+                
                 if (isset($_SESSION['products'])) {
                     foreach ($_SESSION['products'] as $key => $product) {
                         $price = rtrim($product['price'], '€');
