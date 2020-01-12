@@ -3,7 +3,7 @@
 include 'config/config.php';
 
 $n = 10;
-function getName($n)
+function setUserId($n)
 {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $randomString = '';
@@ -17,7 +17,7 @@ function getName($n)
 }
 
 if (!isset($_SESSION['userId'])) {
-    $_SESSION['userId'] = getName($n);
+    $_SESSION['userId'] = setUserId($n);
 }
 
 

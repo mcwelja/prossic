@@ -56,10 +56,22 @@ if (isset($_POST['cart'])) {
     $response .= '<br>' . 'Name: ' . $_POST['first-name'] . ' ' . $_POST['last-name'] . '<br>';
     $response .= 'Phone number: ' . $_POST['phone-number'] . '<br>';
     $response .= 'Email: ' . $_POST['email'];
-}
 
-// Load Composer's autoloader
-// require '../vendor/autoload.php';
+
+    // Write order to database
+    $jsonProducts = json_encode($_SESSION['products']);
+    $sql = "INSERT INTO orders (firstName, lastName, orderId, email, phone, jsonProducts) 
+            VALUES (:firstName, :lastName, :orderId, :email, :phone, :jsonProducts)";
+
+    $stmt = $db->prepare($sql);
+    $stmt->bindParam(':firstName', $_POST['first-name']);
+    $stmt->bindParam(':lastName', $_POST['last-name']);
+    $stmt->bindParam(':orderId', $_SESSION['userId']);
+    $stmt->bindParam(':email', $_POST['email']);
+    $stmt->bindParam(':phone', $_POST['phone-number']);
+    $stmt->bindParam(':jsonProducts', $jsonProducts);
+    $stmt->execute();
+}
 
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
@@ -70,7 +82,7 @@ $mail->isSMTP();                                            // Send using SMTP
 $mail->Host = 'smtp.gmail.com';                             // Set the SMTP server to send through
 $mail->SMTPAuth = true;                                     // Enable SMTP authentication
 $mail->Username = 'mcwelja@gmail.com';                      // SMTP username
-$mail->Password = 'SonjaDjokic93';                          // SMTP password
+$mail->Password = 'MladenV1990';                            // SMTP password
 // $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
 $mail->SMTPSecure = "tls";
 $mail->Port = 587;                                          // TCP port to connect to
