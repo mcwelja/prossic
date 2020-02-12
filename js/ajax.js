@@ -37,9 +37,8 @@ $(document).ready(function() {
             data: { arrayIndex },
             dataType: 'json',
             success: function(response){
-               if (true === response) {
-                   location.reload();
-               }
+                $('#total-price').html('<strong>Total ' + response.currentTotal + '€</strong>');
+                location.reload();
             }
         });
     });
